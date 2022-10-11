@@ -1,0 +1,13 @@
+aside {
+  position: fixed;
+  width: 280px;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgb(156, 5, 5);
+  color: white;
+}
+
+main {
+  padding-left: 280px;
+}
