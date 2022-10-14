@@ -1,9 +1,15 @@
+import type { LinksFunction } from "@remix-run/node";
 import { Outlet } from "@remix-run/react";
+import Sidebar, { links as sidebarLinks } from "~/components/Sidebar";
 
-const _layout = () => {
+export const links: LinksFunction = () => {
+  return [...sidebarLinks()];
+};
+
+const __layout = () => {
   return (
     <>
-      <aside>Sidebar</aside>
+      <Sidebar />
       <main>
         <Outlet />
       </main>
@@ -11,4 +17,4 @@ const _layout = () => {
   );
 };
 
-export default _layout;
+export default __layout;
