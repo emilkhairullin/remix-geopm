@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
-const useWatch = () => {
-  const [time, setTime] = useState<Date>(new Date());
+const useWatch = (initialTime: string) => {
+  const [time, setTime] = useState<Date | string>(initialTime);
 
   useEffect(() => {
     const timer = setInterval(() => {

@@ -1,0 +1,16 @@
+:root {
+  --light-red: #ff0072;
+  --red: #c7065c;
+  --red-heading: #c7065c;
+  --red-button: #510125;
+  --light-blue: #018ad9;
+  --blue: #385573;
+  --dark-blue: #192936;
+  --orange: #ff8a00;
+  --purple: #320151;
+
+  --fs-heading: 33px;
+  --fs-lg: 24px;
+
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+}

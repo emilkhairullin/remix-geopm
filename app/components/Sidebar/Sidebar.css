@@ -1,12 +1,12 @@
 .sidebar {
   box-sizing: border-box;
-  position: fixed;
-  width: 280px;
-  max-width: 280px;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background-color: rgb(156, 5, 5);
+  background-image: url("/assets/bgSidebar.svg");
   color: white;
+  height: 100vh;
+  left: 0;
+  max-width: 280px;
   padding: 23px 33px;
+  position: fixed;
+  top: 0;
+  width: 280px;
 }

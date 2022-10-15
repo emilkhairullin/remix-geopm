@@ -1,0 +1,8 @@
+.breadcrumbs {
+  margin-bottom: 12px;
+}
+
+.breadcrumbs__item {
+  color: var(--blue);
+  text-decoration: none;
+}
