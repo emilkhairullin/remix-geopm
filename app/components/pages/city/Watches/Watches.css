@@ -1,1 +1,50 @@
-export * from "./"
+.watches {
+  padding-top: 48px;
+}
+
+.watch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.watches__wrapper {
+  margin-bottom: 38px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.watch__header {
+  color: var(--gray);
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.watch:first-child {
+  margin-right: 80px;
+}
+
+.watch__clock {
+  margin-bottom: 10px;
+}
+
+.watch__description {
+  position: relative;
+}
+
+.watch__time {
+  font-size: 18px;
+  color: var(--gray);
+  font-weight: bold;
+}
+
+.watch__date {
+  font-size: 12px;
+  color: var(--dark-gray);
+  position: absolute;
+  top: -10px;
+  left: 90px;
+  white-space: nowrap;
+}

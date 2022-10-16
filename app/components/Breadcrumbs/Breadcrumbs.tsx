@@ -10,22 +10,27 @@ export const links: LinksFunction = () => {
 
 export const Breadcrumbs: FC<BreadcrumbsProps> = () => {
   return (
-    <div className="breadcrumbs">
-      <a href="#" className="breadcrumbs__item">
-        Time
-      </a>
-      <span className="breadcrumbs__divider"> / </span>
-      <a href="#" className="breadcrumbs__item">
-        Africa
-      </a>
-      <span className="breadcrumbs__divider"> / </span>
-      <a href="#" className="breadcrumbs__item">
-        Egypt
-      </a>
-      <span className="breadcrumbs__divider"> / </span>
-      <a href="#" className="breadcrumbs__item breadcrumbs__item--active">
-        Cairo
-      </a>
-    </div>
+    <ul className="breadcrumbs">
+      <li>
+        <a href="#" className="breadcrumbs__item">
+          Time
+        </a>
+      </li>
+      <li>
+        <a href="#" className="breadcrumbs__item">
+          Africa
+        </a>
+      </li>
+      <li>
+        <a href="#" className="breadcrumbs__item">
+          Egypt
+        </a>
+      </li>
+      <li>
+        <a href="#" className="breadcrumbs__item breadcrumbs__item--active">
+          Cairo
+        </a>
+      </li>
+    </ul>
   );
 };

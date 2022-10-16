@@ -1,19 +1,24 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import type { LinksFunction } from "@remix-run/node";
+import type { FC } from "react";
 import styles from "./Clock.css";
+
+export type ClockProps = {
+  className?: string;
+};
 
 export const links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: styles }];
 };
 
-export const Clock = () => {
+export const Clock: FC<ClockProps> = ({ className }) => {
   return (
-    <div id="clock">
-      <div id="a">
-        <div id="b">
-          <div id="c">
-            <div id="d">
-              <div id="sh">
+    <div className={`clock ${className ?? ""}`}>
+      <div className="a">
+        <div className="b">
+          <div className="c">
+            <div className="d">
+              <div className="sh">
                 <div className="hh">
                   <div className="h"></div>
                 </div>
@@ -25,7 +30,7 @@ export const Clock = () => {
                   <div className="s"></div>
                 </div>
               </div>
-              <div id="ii">
+              <div className="ii">
                 <b>
                   <i></i>
                   <i></i>
@@ -63,8 +68,8 @@ export const Clock = () => {
                   <i></i>
                 </b>
               </div>
-              <div id="e">
-                <div id="f">
+              <div className="e">
+                <div className="f">
                   <u>
                     12
                     <u>
@@ -76,7 +81,7 @@ export const Clock = () => {
                     </u>
                   </u>
                 </div>
-                <div id="g">
+                <div className="g">
                   <u>
                     <u>
                       11
@@ -88,7 +93,7 @@ export const Clock = () => {
                     6
                   </u>
                 </div>
-                <div id="q">
+                <div className="q">
                   <a
                     href="#"
                     style={{
@@ -113,7 +118,7 @@ export const Clock = () => {
                 <div className="s"></div>
                 <div className="sr"></div>
               </div>
-              <div id="k"></div>
+              <div className="k"></div>
             </div>
           </div>
         </div>

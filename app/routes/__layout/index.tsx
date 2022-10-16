@@ -5,6 +5,7 @@ import {
   Breadcrumbs,
   links as breadcrumbsLinks,
 } from "~/components/Breadcrumbs";
+import { Divider, links as dividerLinks } from "~/components/Divider";
 import {
   AlternativeNames,
   links as alternativeNamesLinks,
@@ -42,7 +43,15 @@ import {
 import useWatch from "~/hooks/useWatch";
 
 export const links: LinksFunction = () => {
-  return [...breadcrumbsLinks(), ...cityHeaderLinks(), ...timezoneLinks()];
+  return [
+    ...dividerLinks(),
+    ...breadcrumbsLinks(),
+    ...cityHeaderLinks(),
+    ...watchesLinks(),
+    ...timeDifferenceLinks(),
+    ...timezoneLinks(),
+    ...sunInfoLinks(),
+  ];
 };
 
 export const loader = () => {
@@ -63,14 +72,22 @@ const IndexPage = () => {
     <>
       <Breadcrumbs />
       <CityHeader />
+      <Divider />
       <Watches />
+      <Divider />
       <TimeDiffernce />
+      <Divider />
       <Timezone />
       <SunInfo />
+      <Divider />
       <AlternativeNames />
+      <Divider />
       <OnMap />
+      <Divider />
       <KeyFacts />
+      <Divider />
       <Cities />
+      <Divider />
       <PopularCities />
     </>
   );

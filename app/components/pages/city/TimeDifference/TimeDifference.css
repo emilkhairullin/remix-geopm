@@ -1,0 +1,46 @@
+.timedifference {
+}
+
+.timedifference__header {
+  display: flex;
+  align-items: center;
+}
+
+.timedifference__header > .section-header {
+  margin-right: 22px;
+  margin-bottom: 0;
+}
+
+.timedifference__button {
+  padding: 4px 12px;
+  width: 52px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.timedifference__pm-button {
+  background-color: #192936;
+  color: white;
+}
+.timedifference__24-button {
+  background-color: #385573;
+  color: #141618;
+}
+
+.timedifference__info {
+  color: #b2b2b3;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 22px;
+}
+
+.timedifference__accent {
+  color: var(--orange);
+}
+
+.timedifference__options {
+  color: var(--lighter-blue);
+  text-decoration: underline;
+}

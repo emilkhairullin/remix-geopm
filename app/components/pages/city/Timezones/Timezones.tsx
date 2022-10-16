@@ -1,5 +1,6 @@
 import type { LinksFunction } from "@remix-run/node";
 import type { FC } from "react";
+import { Divider } from "~/components/Divider";
 import styles from "./Timezones.css";
 
 export const links: LinksFunction = () => {
@@ -8,20 +9,23 @@ export const links: LinksFunction = () => {
 
 export const Timezone: FC = () => {
   return (
-    <section className="timezone" id="timezone">
-      <h2>Cario time zone</h2>
-      <p>
+    <section className="timezones">
+      <h2 className="section-header">Cario time zone</h2>
+      <p className="timezones__info">
         Central Africa Time(Cat),{" "}
-        <span className="timezone__accent">UTC+2</span>
+        <span className="timezones__accent">UTC+2</span>
       </p>
-      <p>No daylight saving time, same offset all year.</p>
-      <p>
-        The IANA time zone identifier for Cairo is
-        <span className="timezone__accent">Africa/Cairo</span>
+      <p className="timezones__info">
+        No daylight saving time, same offset all year.
       </p>
-      <div className="timezone__other">
-        <p>Other cities UTC +2</p>
-        <ul>
+      <p className="timezones__info">
+        The IANA time zone identifier for Cairo is{" "}
+        <span className="timezones__accent">Africa/Cairo</span>
+      </p>
+      <Divider className="timezones__divider" />
+      <div className="timezones__other">
+        <p>Other cities UTC +2: </p>
+        <ul className="timezones__list">
           <li>
             <a href="#">Afiny</a>
           </li>

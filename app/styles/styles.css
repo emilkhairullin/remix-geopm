@@ -3,14 +3,42 @@
   --red: #c7065c;
   --red-heading: #c7065c;
   --red-button: #510125;
+  --lighter-blue: #1ca7ff;
   --light-blue: #018ad9;
   --blue: #385573;
   --dark-blue: #192936;
   --orange: #ff8a00;
   --purple: #320151;
+  --gray: #cbd3d8;
+  --dark-gray: #9a958f;
 
-  --fs-heading: 33px;
+  --fs-heading: 32px;
   --fs-lg: 24px;
 
   font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+.section-header {
+  font-size: var(--fs-heading);
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.section-link {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--light-blue);
+  text-decoration: none;
+  width: 100%;
+  text-align: end;
+}
+
+.section-link:visited {
+  color: var(--light-blue);
 }

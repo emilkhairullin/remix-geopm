@@ -9,6 +9,7 @@ import {
 } from "@remix-run/react";
 
 import styles from "~/styles/styles.css";
+import reset from "~/styles/reset.css";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
@@ -17,7 +18,10 @@ export const meta: MetaFunction = () => ({
 });
 
 export const links: LinksFunction = () => {
-  return [{ rel: "stylesheet", href: styles }];
+  return [
+    { rel: "stylesheet", href: reset },
+    { rel: "stylesheet", href: styles },
+  ];
 };
 
 export default function App() {

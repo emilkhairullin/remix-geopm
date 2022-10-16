@@ -1,8 +1,33 @@
 .breadcrumbs {
+  margin: 0;
   margin-bottom: 12px;
+  padding: 0;
+  font-size: 14px;
+  display: flex;
+  gap: 32px;
+  list-style-type: none;
+}
+
+.breadcrumbs > li {
+  position: relative;
+}
+
+.breadcrumbs > li::after {
+  content: "/";
+  position: absolute;
+  top: 0;
+  right: -19px;
+}
+
+.breadcrumbs > li:last-child:after {
+  content: none;
 }
 
 .breadcrumbs__item {
-  color: var(--blue);
+  color: var(--light-blue);
   text-decoration: none;
+}
+
+.breadcrumbs__item--active {
+  color: var(--orange);
 }

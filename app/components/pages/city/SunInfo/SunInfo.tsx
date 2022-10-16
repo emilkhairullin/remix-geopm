@@ -7,17 +7,29 @@ export const links: LinksFunction = () => {
 
 export const SunInfo = () => {
   return (
-    <section className="sun-info">
-      <h2>Sun Info</h2>
-      <ul>
-        <li>Sunrise: 06:23</li>
-        <li> Sunset: 16:58</li>
-        <li> Solar noon: 11:40</li>
-        <li> Day length: 10h 35m</li>
+    <section className="sun">
+      <h2 className="section-header">Sun Info</h2>
+      <ul className="sun__info">
+        <li>
+          Sunrise: <span className="info__time">06:23</span>
+        </li>
+        <li>
+          Sunset: <span className="info__time">16:58</span>
+        </li>
+        <li>
+          Solar noon: <span className="info__time">11:40</span>
+        </li>
+        <li>
+          Day length: <span className="info__time">10h 35m</span>
+        </li>
       </ul>
-      <p>Golden hour photography: 06:23-07:00 | 16:20-16:58</p>
-      <a href="#">more info</a>
+      <p className="sun__golden-hour">
+        Golden hour photography: 06:23-07:00 | 16:20-16:58
+      </p>
       <p>image</p>
+      <a href="#" className="section-link">
+        more info
+      </a>
     </section>
   );
 };
