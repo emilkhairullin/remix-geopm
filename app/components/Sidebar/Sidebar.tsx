@@ -10,18 +10,68 @@ export const links: LinksFunction = () => {
 const Sidebar: React.FC = () => {
   return (
     <aside className="sidebar">
-      This is sidebar
-      <Link to="#">
+      <Link to="/" className="sidebar__logo">
         <img src={logo} alt="" height={130} width={130} />
       </Link>
-      <nav>
+      <nav className="sidebar__nav">
         <ul>
-          <li>Current time</li>
-          <li>Time difference</li>
-          <li>Time zones</li>
-          <li>Sun info</li>
-          <li>Coordinates</li>
-          <li>Timer & stopwatch</li>
+          <li className="nav__item">
+            <Link to="/" className="link link--active">
+              Home
+            </Link>
+          </li>
+          <li className="nav__item">
+            <Link to="/" className="link">
+              Metropoles
+            </Link>
+          </li>
+          <li className="nav__item">
+            <Link to="/" className="link">
+              Countries
+            </Link>
+          </li>
+          <li className="nav__item">
+            <Link to="/" className="link">
+              Continents
+            </Link>
+            <ul className="subnav">
+              <li>
+                <Link to="/" className="subnav__item">
+                  Antarctica
+                </Link>
+              </li>
+              <li>
+                <Link to="/" className="subnav__item">
+                  Africa
+                </Link>
+              </li>
+              <li>
+                <Link to="/" className="subnav__item">
+                  Asia
+                </Link>
+              </li>
+              <li>
+                <Link to="/" className="subnav__item">
+                  Australia/Oceania
+                </Link>
+              </li>
+              <li>
+                <Link to="/" className="subnav__item">
+                  Europe
+                </Link>
+              </li>
+              <li>
+                <Link to="/" className="subnav__item">
+                  North America
+                </Link>
+              </li>
+              <li>
+                <Link to="/" className="subnav__item">
+                  South America
+                </Link>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </aside>
