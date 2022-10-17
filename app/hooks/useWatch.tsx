@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const useWatch = (initialTime: string) => {
+const useWatch = (initialTime: Date | string) => {
   const [time, setTime] = useState<Date | string>(initialTime);
 
   useEffect(() => {
