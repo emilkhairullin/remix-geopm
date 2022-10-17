@@ -1,0 +1,11 @@
+.cities__list {
+	margin-top: 20px;
+}
+.cities__tagCloud {
+	text-align: center;
+}
+.cities__tagCloud span {
+	margin: 4px 6px !important;
+	font-weight: bold;
+	color: #d8ccd8;
+}
