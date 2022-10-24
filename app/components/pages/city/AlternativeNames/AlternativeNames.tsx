@@ -6,11 +6,41 @@ export const links: LinksFunction = () => {
 };
 
 export const AlternativeNames = () => {
+  const names = [
+    "Kairo",
+    "cairo",
+    "Kairo",
+    "Caire",
+    "კაირო-k’airo",
+    "Kairo",
+    "Κάιρο-Káiro",
+    "કૈરો-Kairō",
+    "cairo",
+    "קאירו",
+    "काहिरा-kaahira",
+    "Kairó",
+    "kairó",
+    "Kairo",
+    "Cairo	Egitto",
+  ];
+
   return (
-    <section className="alternative-names">
-      <h2>Alternative Names</h2>
-      <p>List of alternative names</p>
-      <a href="#">all names</a>
+    <section className="alter">
+      <div className="container">
+        <h2 className="section-header">Alternative Names</h2>
+        <ul className="alter__list">
+          {names.map((el, index) => {
+            return (
+              <li className="alter__list-item" key={index}>
+                {el}
+              </li>
+            );
+          })}
+        </ul>
+        <a className="section-link" href="#">
+          all names
+        </a>
+      </div>
     </section>
   );
 };

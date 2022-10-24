@@ -23,10 +23,21 @@
   /* outline: 1px solid red; */
 }
 
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 .section-header {
   font-size: var(--fs-heading);
   font-weight: bold;
   margin-bottom: 8px;
+}
+
+.container {
+  max-width: 1640px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .section-link {
@@ -42,3 +53,5 @@
 .section-link:visited {
   color: var(--light-blue);
 }
+
+

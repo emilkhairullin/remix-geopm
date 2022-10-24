@@ -1,97 +1,70 @@
-import type { LinksFunction } from '@remix-run/node';
-import { json } from '@remix-run/node';
-import { useLoaderData } from '@remix-run/react';
+import type { LinksFunction } from "@remix-run/node";
+import { json } from "@remix-run/node";
+import { useLoaderData } from "@remix-run/react";
+import { Divider, links as dividerLinks } from "~/components/Divider";
 import {
-	Breadcrumbs,
-	links as breadcrumbsLinks,
-} from '~/components/Breadcrumbs';
-import { Divider, links as dividerLinks } from '~/components/Divider';
+  AlternativeNames,
+  links as alternativeNamesLinks,
+} from "~/components/pages/city/AlternativeNames";
+import { Cities, links as citiesLinks } from "~/components/pages/city/Cities";
 import {
-	AlternativeNames,
-	links as alternativeNamesLinks,
-} from '~/components/pages/city/AlternativeNames';
-import { Cities, links as citiesLinks } from '~/components/pages/city/Cities';
+  KeyFacts,
+  links as keyFactsLinks,
+} from "~/components/pages/city/KeyFacts";
+import { Main, links as mainLinks } from "~/components/pages/city/Main";
+import { OnMap } from "~/components/pages/city/OnMap";
+import { PopularCities } from "~/components/pages/city/PopularCities";
 import {
-	CityHeader,
-	links as cityHeaderLinks,
-} from '~/components/pages/city/CityHeader';
+  links as sunInfoLinks,
+  SunInfo,
+} from "~/components/pages/city/SunInfo";
 import {
-	KeyFacts,
-	links as keyFactsLinks,
-} from '~/components/pages/city/KeyFacts';
-import { links as onMapLinks, OnMap } from '~/components/pages/city/OnMap';
-import {
-	links as popularCitiesLinks,
-	PopularCities,
-} from '~/components/pages/city/PopularCities';
-import {
-	links as sunInfoLinks,
-	SunInfo,
-} from '~/components/pages/city/SunInfo';
-import {
-	links as timeDifferenceLinks,
-	TimeDiffernce,
-} from '~/components/pages/city/TimeDifference';
-import {
-	links as timezoneLinks,
-	Timezone,
-} from '~/components/pages/city/Timezones';
-import {
-	links as watchesLinks,
-	Watches,
-} from '~/components/pages/city/Watches';
-import useWatch from '~/hooks/useWatch';
+  links as timezoneLinks,
+  Timezone,
+} from "~/components/pages/city/Timezones";
 
 export const links: LinksFunction = () => {
-	return [
-		...dividerLinks(),
-		...breadcrumbsLinks(),
-		...cityHeaderLinks(),
-		...watchesLinks(),
-		...timeDifferenceLinks(),
-		...timezoneLinks(),
-		...sunInfoLinks(),
-		...citiesLinks(),
-	];
+  return [
+    ...mainLinks(),
+    ...dividerLinks(),
+    ...timezoneLinks(),
+    ...sunInfoLinks(),
+    ...citiesLinks(),
+    ...alternativeNamesLinks(),
+    ...keyFactsLinks(),
+  ];
 };
 
 export const loader = () => {
-	const time = new Date().toLocaleTimeString('us', {
-		hour: 'numeric',
-		minute: 'numeric',
-		second: 'numeric',
-	});
+  const time = new Date().toLocaleTimeString("us", {
+    hour: "numeric",
+    minute: "numeric",
+    second: "numeric",
+  });
 
-	return json({ time });
+  return json({ time });
 };
 
 const IndexPage = () => {
-	const data = useLoaderData<typeof loader>();
-	const { currentTime } = useWatch(data.time);
+  const data = useLoaderData<typeof loader>();
 
-	return (
-		<>
-			<Breadcrumbs />
-			<CityHeader />
-			<Divider />
-			<Watches />
-			<Divider />
-			<TimeDiffernce />
-			<Divider />
-			<Timezone />
-			<SunInfo />
-			<Divider />
-			<AlternativeNames />
-			<Divider />
-			<OnMap />
-			<Divider />
-			<KeyFacts />
-			<Divider />
-			<Cities />
-			<Divider />
-			<PopularCities />
-		</>
-	);
+  return (
+    <>
+      <Main />
+      <Timezone />
+      <SunInfo />
+      <Divider />
+      <AlternativeNames />
+      <Divider />
+      <OnMap />
+      <Divider />
+      <KeyFacts />
+      <Divider />
+      <Cities />
+      <Divider />
+      <PopularCities />
+    </>
+  );
 };
 
 export default IndexPage;

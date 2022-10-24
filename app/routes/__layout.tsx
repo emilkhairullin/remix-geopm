@@ -7,7 +7,7 @@ export const links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: _layoutStyles }, ...sidebarLinks()];
 };
 
-const __layout = () => {
+const Layout = () => {
   return (
     <>
       <Sidebar />
@@ -18,4 +18,4 @@ const __layout = () => {
   );
 };
 
-export default __layout;
+export default Layout;

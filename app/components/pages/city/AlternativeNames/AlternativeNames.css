@@ -1,0 +1,11 @@
+.alter__list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-bottom: 14px;
+}
+
+.alter__list-item {
+  font-size: 18px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}

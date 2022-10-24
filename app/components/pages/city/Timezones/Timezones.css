@@ -1,6 +1,13 @@
 .timezones {
-  padding-top: 38px;
-  padding-bottom: 38px;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("/assets/timezonesMap.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 .timezones .section-header {
