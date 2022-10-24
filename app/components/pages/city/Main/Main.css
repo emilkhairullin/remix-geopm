@@ -1,0 +1,11 @@
+.main-wrapper {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background: linear-gradient(
+      90deg,
+      rgba(32, 34, 38, 0.4) 0%,
+      rgba(32, 34, 38, 0.4) 100%
+    ),
+    url("/assets/mainBackground.png"), url("/assets/mainMapBackground.png");
+  background-repeat: repeat, repeat, repeat-x;
+}
