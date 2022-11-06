@@ -1,0 +1,11 @@
+.key-facts {
+  padding-block: 20px;
+  background-image: url("/assets/mainBackground.png");
+  background-repeat: repeat;
+}
+
+.key-facts__data td {
+  font-size: 18px;
+  line-height: 203%;
+  color: var(--gray);
+}

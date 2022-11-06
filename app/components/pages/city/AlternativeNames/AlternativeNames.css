@@ -1,11 +1,40 @@
+.alter {
+  background: radial-gradient(
+    circle,
+    rgba(6, 39, 100, 1) 0%,
+    rgba(17, 13, 1, 1) 50%
+  );
+  background-position: center center;
+  padding-top: 22px;
+  padding-bottom: 12px;
+}
+
+.alter .section-header {
+  margin-bottom: 22px;
+}
+
 .alter__list {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  margin-bottom: 14px;
+  margin-bottom: 6px;
 }
 
 .alter__list-item {
   font-size: 18px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   font-weight: bold;
+  position: relative;
+  padding-left: 24px;
+}
+
+.alter__list-item::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  content: "";
+  height: 12px;
+  width: 12px;
+  background-color: #00a6ff;
+  border-radius: 100%;
 }

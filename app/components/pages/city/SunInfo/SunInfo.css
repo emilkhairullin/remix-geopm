@@ -1,5 +1,19 @@
 .sun {
   padding: 20px 0;
+  /* background: url("/assets/skylineBg.png"),
+    radial-gradient(circle, rgba(125, 77, 15, 1) 0%, rgba(17, 13, 1, 1) 65%); */
+  background: url("/assets/skylineBg.png"),
+    radial-gradient(circle, rgba(125, 77, 15, 1) 0%, rgba(7, 6, 0, 1) 65%);
+
+  background-repeat: repeat-x, no-repeat;
+  background-position: bottom center, center center;
+
+  /* remove later */
+  padding-bottom: 155px;
+}
+
+.sun .section-header {
+  margin-bottom: 10px;
 }
 
 .sun__info {
@@ -34,4 +48,5 @@
   color: var(--orange);
   font-size: 14px;
   font-weight: bold;
+  letter-spacing: 0.1px;
 }
