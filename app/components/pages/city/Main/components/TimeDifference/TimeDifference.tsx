@@ -1,10 +1,14 @@
 import type { LinksFunction } from "@remix-run/node";
 import type { FC } from "react";
 import { Divider } from "~/components/Divider";
+import {
+  TimezonesDraggable,
+  links as timezonesDraggableLinks,
+} from "./components/TimezonesDraggable";
 import styles from "./TimeDifference.css";
 
 export const links: LinksFunction = () => {
-  return [{ rel: "stylesheet", href: styles }];
+  return [{ rel: "stylesheet", href: styles }, ...timezonesDraggableLinks()];
 };
 
 export const TimeDiffernce: FC = () => {
@@ -29,10 +33,14 @@ export const TimeDiffernce: FC = () => {
           <span className="timedifference__options">6:00 pm</span>{" "}
           <span className="timedifference__accent">my local time</span>
         </p>
-        <div>Time difference component</div>
-        <a href="#" className="section-link">
-          Time difference Cairo from other cities
-        </a>
+      </div>
+      <div className="timedifference__component">
+        <div className="container">
+          <TimezonesDraggable />
+          <a href="#" className="section-link">
+            Time difference Cairo from other cities
+          </a>
+        </div>
       </div>
     </section>
   );

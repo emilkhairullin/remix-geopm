@@ -34,7 +34,6 @@ export const Main = () => {
       <Watches />
       <Divider />
       <TimeDiffernce />
-      <Divider />
     </div>
   );
 };

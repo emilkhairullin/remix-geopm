@@ -8,17 +8,20 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  padding-top: 31px;
+  padding-bottom: 42px;
 }
 
 .timezones .section-header {
-  margin-bottom: 36px;
+  margin-bottom: 33px;
 }
 
 .timezones__info {
   font-size: 24px;
   font-weight: bold;
   color: #b2b2b3;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+  letter-spacing: -0.1px;
 }
 
 .timezones__info:last-of-type {
@@ -36,6 +39,7 @@
 .timezones__other {
   font-size: 18px;
   font-weight: bold;
+  margin-top: 32px;
   display: flex;
 }
 
@@ -46,6 +50,7 @@
 .timezones__list {
   display: flex;
   justify-content: center;
+  gap: 14px;
 }
 
 .timezones__list > li {

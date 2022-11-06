@@ -16,7 +16,7 @@ export const Watches: FC = () => {
             <h3 className="watch__header">Current time in Cairo</h3>
             <Clock className="watch__clock" />
             <div className="watch__description">
-              <p className="watch__time">18:19:20</p>
+              <p className="watch__time">20:49:46</p>
               <p className="watch__date">8 April</p>
             </div>
           </div>
@@ -24,7 +24,7 @@ export const Watches: FC = () => {
             <h3 className="watch__header">My local time</h3>
             <Clock className="watch__clock" />
             <div className="watch__description">
-              <p className="watch__time">18:19:20</p>
+              <p className="watch__time">20:49:46</p>
               <p className="watch__date">8 April</p>
             </div>
           </div>

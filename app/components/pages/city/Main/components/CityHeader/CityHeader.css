@@ -16,15 +16,18 @@
   line-height: 0.8;
   color: var(--red);
   margin-right: 12px;
+  letter-spacing: -1.6px;
 }
 
 .city-header__date {
   font-size: 18px;
   margin-bottom: 14px;
+  letter-spacing: 0.5px;
 }
 
 .city-header__sun {
   font-size: 14px;
+  letter-spacing: 0.4px;
 }
 
 .controlls {

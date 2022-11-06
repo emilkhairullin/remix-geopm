@@ -31,7 +31,7 @@ const Sidebar: React.FC = () => {
             </Link>
           </li>
           <li className="nav__item">
-            <Link to="/" className="link">
+            <Link to="/" className="link link-subnav">
               Continents
             </Link>
             <ul className="subnav">

@@ -1,5 +1,5 @@
 .watches {
-  padding-top: 48px;
+  padding-top: 34px;
 }
 
 .watch {
@@ -17,9 +17,10 @@
 
 .watch__header {
   color: var(--gray);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
+  letter-spacing: 0.4px;
 }
 
 .watch:first-child {
@@ -27,7 +28,7 @@
 }
 
 .watch__clock {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .watch__description {
@@ -35,16 +36,16 @@
 }
 
 .watch__time {
-  font-size: 18px;
+  font-size: 17px;
   color: var(--gray);
   font-weight: bold;
 }
 
 .watch__date {
-  font-size: 12px;
+  font-size: 11px;
   color: var(--dark-gray);
   position: absolute;
   top: -10px;
-  left: 90px;
+  right: -37px;
   white-space: nowrap;
 }

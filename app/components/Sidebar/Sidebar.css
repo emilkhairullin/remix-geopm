@@ -35,11 +35,11 @@
 }
 
 .nav__item {
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 }
 
 .nav__item .link {
-  font-size: 24px;
+  font-size: 17px;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
@@ -47,4 +47,22 @@
 
 .nav__item .link--active {
   color: var(--red);
+}
+
+.link-subnav {
+  margin-bottom: 6px;
+  display: block;
+}
+
+.subnav__item {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  margin-bottom: 7px;
+  display: block;
+}
+
+.subnav__item::after {
+  content: "-";
+  margin-left: 6px;
 }

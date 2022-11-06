@@ -1,0 +1,62 @@
+.timezones-draggable {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 42px;
+}
+
+.timezones-draggable__box {
+  width: 700px;
+  height: 20px;
+  box-sizing: border-box;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.timezones-draggable__inner-box {
+  width: 100%;
+  height: 100%;
+  background: url("/assets/draggableBg.png"), linear-gradient(#100c01, #100c01);
+  background-size: contain;
+  border-radius: 11px;
+  font-size: 11px;
+}
+
+.timezones-draggable__box::before,
+.timezones-draggable__box::after {
+  content: "";
+  position: absolute;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.timezones-draggable__box::before {
+  transform: translateZ(-2px);
+  background-image: linear-gradient(180deg, #747272, #010101);
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  left: -4px;
+  top: -4px;
+  border-radius: 12px;
+}
+
+.timezones-draggable__box::after {
+  transform: translateZ(-1px);
+  background-image: linear-gradient(180deg, #161616, #505050);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  left: -2px;
+  top: -2px;
+  border-radius: 10px;
+}
+
+.timezones-draggable__numbers-top {
+  display: grid;
+  grid-template-columns: repeat(25, 1fr);
+  font-size: 9px;
+  position: absolute;
+  top: -18px;
+  left: 24px;
+  width: 100%;
+}
