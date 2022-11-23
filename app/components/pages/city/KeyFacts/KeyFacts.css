@@ -1,5 +1,7 @@
 .key-facts {
   padding-block: 20px;
+  padding-top: 31px;
+  padding-bottom: 43px;
   background-image: url("/assets/mainBackground.png");
   background-repeat: repeat;
 }

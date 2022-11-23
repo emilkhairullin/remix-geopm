@@ -1,0 +1,14 @@
+.popular-cities {
+  padding-top: 15px;
+}
+
+.popular-cities__header {
+  margin-bottom: 19px;
+}
+
+.popular-cities__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-right: 120px;
+  text-align: right;
+}

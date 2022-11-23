@@ -43,7 +43,14 @@ export const links: LinksFunction = () => {
 const IndexPage = () => {
   return (
     <>
-      <Main />
+      <div className="main-wrapper">
+        <Breadcrumbs />
+        <CityHeader />
+        <Divider />
+        <Watches />
+        <Divider />
+        <TimeDiffernce />
+      </div>
       <Timezone />
       <SunInfo />
       <AlternativeNames />
@@ -51,6 +58,7 @@ const IndexPage = () => {
       <KeyFacts />
       <Cities />
       <PopularCities />
+      <Footer />
     </>
   );
 };

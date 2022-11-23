@@ -1,11 +1,17 @@
+.cities {
+  padding-top: 35px;
+  padding-bottom: 19px;
+  background-color: #320151;
+}
+
 .cities__list {
-	margin-top: 20px;
+  margin-top: 23px;
 }
 .cities__tagCloud {
-	text-align: center;
+  text-align: center;
 }
 .cities__tagCloud span {
-	margin: 4px 6px !important;
-	font-weight: bold;
-	color: #d8ccd8;
+  margin: 4px 6px !important;
+  font-weight: bold;
+  color: #d8ccd8;
 }

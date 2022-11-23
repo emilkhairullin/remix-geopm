@@ -1,0 +1,7 @@
+.footer {
+  padding: 24px 48px;
+  display: flex;
+}
+.footer__logo {
+  display: inline-block;
+}

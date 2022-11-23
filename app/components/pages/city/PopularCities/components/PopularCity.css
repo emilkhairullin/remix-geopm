@@ -1,0 +1,17 @@
+.popular-city {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 11px;
+}
+
+.popular-city__name {
+  font-weight: bold;
+  font-size: 30px;
+  margin-right: 10px;
+  color: #1ca7ff;
+}
+.popular-city__timezone,
+.popular-city__time-difference {
+  font-size: 10px;
+  font-weight: bold;
+}
